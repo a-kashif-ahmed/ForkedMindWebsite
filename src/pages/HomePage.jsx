@@ -1,4 +1,4 @@
-import React from "react";
+
 import NavBar from "../components/NavBar";
 import hero1 from '../assets/Hero1.png'
 import board from '../assets/Board.png'
@@ -53,7 +53,7 @@ export default function HomePage() {
 
 
                 <div className="flex-1">
-                     <img alt="heh"
+                     <img 
                         src={board}
                         alt="Chess Board"
                         className="w-full h-auto object-contain rounded-xl"
@@ -76,7 +76,7 @@ export default function HomePage() {
                     </span>
                 </div>
                 <div className="flex-1">
-                     <img alt="heh"
+                     <img 
                         src={board}
                         alt="Chess Board"
                         className="w-full h-auto object-contain rounded-xl"

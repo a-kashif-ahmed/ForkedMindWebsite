@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className="flex items-center justify-between h-20 px-6 md:px-10 max-w-7xl mx-auto">
 
         {/* Logo */}
-         <img alt="heh"
+         <img 
           src={logo}
           alt="ForkedMind logo"
           className="h-10 w-auto"

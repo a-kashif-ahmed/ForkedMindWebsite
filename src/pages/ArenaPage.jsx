@@ -1,17 +1,7 @@
-import React from "react";
+
 import NavBar from "../components/NavBar";
 import hero1 from '../assets/Hero1.png'
-import board from '../assets/Board.png'
-import FeatureCard from "../components/Card";
-import eye from '../assets/eye.png'
-import aiBrain from '../assets/aiBrain.png'
-import shield from '../assets/shield.png'
-import stars from '../assets/stars.png'
-import IconCard from "../components/IconCard";
-import chessboardicon from '../assets/chessboardicon.png'
-import beaker from '../assets/beaker.png'
-import terminal from '../assets/terminal.png'
-import network from '../assets/network.png'
+
 import dashboard from '../assets/dashboard.png'
 import Card from "../components/Card";
 
