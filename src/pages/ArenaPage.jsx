@@ -22,7 +22,7 @@ export default function ArenaPage() {
             <NavBar />
             <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
                 <div className="text-7xl md:text-9xl font-black mb-2 ">
-                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl"><img src={hero1} width='10%' height='10%' /></span>
+                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl"> <img alt="heh" src={hero1} width='10%' height='10%' /></span>
 
                     <span className="relative  text-white"
                         style={{ WebkitTextStroke: "0.1px #1e1b1b" }}
@@ -56,7 +56,7 @@ export default function ArenaPage() {
                     <span style={{ WebkitTextStroke: "1px #1e1b1b" }}>Performance Dashboard</span>
 
                 </div>
-                <img src={dashboard} className="mt-3 " />
+                 <img alt="heh" src={dashboard} className="mt-3 " />
                 <div className="flex justify-left gap-10">
 
                     <div className="bg-[#6f9ad6] text-center px-8 py-2 rounded-full shadow-[0_6px_10px_rgba(0,0,0,0.25)]">

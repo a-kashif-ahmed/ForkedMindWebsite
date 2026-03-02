@@ -5,7 +5,7 @@ export default function Card({ title, description, icon }) {
       {/* Icon */}
       {icon && (
         <div className="text-3xl">
-          <img src={icon}/>
+           <img alt="heh" src={icon}/>
         </div>
       )}
 

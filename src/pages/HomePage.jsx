@@ -23,7 +23,7 @@ export default function HomePage() {
             {/* HERO */}
             <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-5xl mx-auto">
                 <div className="text-7xl md:text-9xl font-black mb-2 ">
-                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl"><img src={hero1} width='10%' height='10%' /></span>
+                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl"> <img alt="heh" src={hero1} width='10%' height='10%' /></span>
 
                     <span className="relative  text-white"
                         style={{ WebkitTextStroke: "0.1px #1e1b1b" }}
@@ -53,7 +53,7 @@ export default function HomePage() {
 
 
                 <div className="flex-1">
-                    <img
+                     <img alt="heh"
                         src={board}
                         alt="Chess Board"
                         className="w-full h-auto object-contain rounded-xl"
@@ -76,7 +76,7 @@ export default function HomePage() {
                     </span>
                 </div>
                 <div className="flex-1">
-                    <img
+                     <img alt="heh"
                         src={board}
                         alt="Chess Board"
                         className="w-full h-auto object-contain rounded-xl"
