@@ -4,6 +4,10 @@ import hero1 from '../assets/Hero1.png'
 
 import dashboard from '../assets/dashboard.png'
 import Card from "../components/Card";
+import ksmile from '../assets/KSmile.png'
+import kshock from '../assets/KShock.png'
+import klaugh from '../assets/KLaugh.png'
+import kun from '../assets/KUn.png'
 
 
 export default function ArenaPage() {
@@ -12,7 +16,7 @@ export default function ArenaPage() {
             <NavBar />
             <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
-                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl"> <img alt="heh" src={hero1} width='10%' height='10%' /></span>
+                    <span className=" relative flex justify-center -top-6 left-1/2 -translate-x-1/2 text-4xl">  <img alt="heh" src={hero1} width='10%' height='10%' /></span>
 
                     <span className="relative  text-white"
                         style={{ WebkitTextStroke: "0.1px #1e1b1b" }}
@@ -171,13 +175,33 @@ export default function ArenaPage() {
                     <div className="flex-1 font-[Passero_One]">
 
                     </div>
-                    <div className="flex-1">
-                        <Card title='Transparent Reasoning' description="Read each model's chain-of-thought as it evaluates positions and plans strategies." />
+
+
+
+                    <div className="flex-1 relative">
+
+                        {/* Icon */}
+                        <img
+                            src={ksmile}
+                            alt=""
+                            className="absolute -top-17 right-4 w-20"
+                        />
+
+                        <Card
+                            title="Transparent Reasoning"
+                            description="Read each model's chain-of-thought as it evaluates positions and plans strategies."
+                        />
+
                     </div>
 
                 </section>
                 <section className="flex flex-col md:flex-row items-center gap-6 px-6 py-12 md:py-16 max-w-6xl mx-auto">
-                    <div className="flex-1">
+                    <div className="flex-1 relative">
+                        <img
+                            src={kun}
+                            alt=""
+                            className="absolute -top-17 left-4 w-20"
+                        />
                         <Card title='Adjustable Rules' description='Modify temperature, time limits, and chess variants to stress-test model behavior.' />
                     </div>
                     <div className="flex-1 font-[Passero_One]">
@@ -188,14 +212,24 @@ export default function ArenaPage() {
                     <div className="flex-1 font-[Passero_One]">
 
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 relative">
+                        <img
+                            src={klaugh}
+                            alt=""
+                            className="absolute -top-17 right-4 w-20"
+                        />
                         <Card title='Replayable Matches' description='Step through any historical match move-by-move with full reasoning replay.' />
                     </div>
 
                 </section>
                 <section className="flex flex-col md:flex-row items-center gap-6 px-6 py-12 md:py-16 max-w-6xl mx-auto">
 
-                    <div className="flex-1">
+                    <div className="flex-1 relative">
+                        <img
+                            src={kshock}
+                            alt=""
+                            className="absolute -top-17 left-4 w-20"
+                        />
                         <Card title='Experimental Benchmarking' description='Run automated test suites across models and export results for research.' />
                     </div>
                     <div className="flex-1 font-[Passero_One]">
