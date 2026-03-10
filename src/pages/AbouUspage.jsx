@@ -1,8 +1,9 @@
-
+import cardlog from '../assets/cardlog.png'
 
 import NavBar from "../components/NavBar";
 import hero1 from '../assets/Hero1.png'
 import FeatureCard from "../components/Card";
+import Card from "../components/Card";
 // import dashboard from '../assets/dashboard.png'
 // import Card from "../components/Card";
 // import ksmile from '../assets/KSmile.png'
@@ -100,6 +101,13 @@ export default function AboutUs() {
                     <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
 Researchers, engineers, and designers united by curiosity about machine intelligence.
                 </p>
+                <div className='flex flex-wrap gap-2 '>
+                    <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+
+                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+                </div>
                     </section>
                     
         </>
