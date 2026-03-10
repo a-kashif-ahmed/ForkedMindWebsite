@@ -3,12 +3,12 @@
 import NavBar from "../components/NavBar";
 import hero1 from '../assets/Hero1.png'
 
-import dashboard from '../assets/dashboard.png'
-import Card from "../components/Card";
-import ksmile from '../assets/KSmile.png'
-import kshock from '../assets/KShock.png'
-import klaugh from '../assets/KLaugh.png'
-import kun from '../assets/KUn.png'
+// import dashboard from '../assets/dashboard.png'
+// import Card from "../components/Card";
+// import ksmile from '../assets/KSmile.png'
+// import kshock from '../assets/KShock.png'
+// import klaugh from '../assets/KLaugh.png'
+// import kun from '../assets/KUn.png'
 
 export default function AboutUs(){
     return(
