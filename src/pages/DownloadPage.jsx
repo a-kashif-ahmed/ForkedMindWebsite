@@ -48,14 +48,16 @@ export default function DownloadPage(){
                     </div>
                     
                     </section>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <DownloadCard icon={cardlog} popular={true} title="Windows" />
-                    <DownloadCard icon={cardlog} popular={true} title="Mac OS (Apple HW)" />
-                    <DownloadCard icon={cardlog} popular={false} title="Mac OS (Intel)" />
-                    <DownloadCard icon={cardlog} popular={false} title="Linux" />
-                    <DownloadCard icon={cardlog} popular={true} title="Android" />
-                    <DownloadCard icon={cardlog} popular={true} title="iOS" />
-                </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
+
+  <DownloadCard icon={cardlog} popular={true} title="Windows" />
+  <DownloadCard icon={cardlog} popular={true} title="Mac OS (Apple HW)" />
+  <DownloadCard icon={cardlog} popular={false} title="Mac OS (Intel)" />
+  <DownloadCard icon={cardlog} popular={false} title="Linux" />
+  <DownloadCard icon={cardlog} popular={true} title="Android" />
+  <DownloadCard icon={cardlog} popular={true} title="iOS" />
+
+</div>
         <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
 
