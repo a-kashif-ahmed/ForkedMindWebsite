@@ -59,30 +59,21 @@ export default function AboutUs() {
                     We believe the future of AI development depends on rigorous, transparent evaluation. Chess is our laboratory — a domain complex enough to reveal reasoning depth, yet structured enough to measure it precisely.
                 </p>
             </section>
-            <section className="max-w-6xl mx-auto px-6 py-20 space-y-16">
+           <section className="max-w-6xl mx-auto px-6 py-20 space-y-16">
 
-  <div className="w-max ml-10">
-    <FeatureCard 
-      title="Transparency First"
-      description="Every decision an AI makes should be observable, explainable, and reproducible."
-    />
+  <div className="flex justify-center md:justify-start">
+    <FeatureCard title="Transparency First" description="Every decision an AI makes should be observable, explainable, and reproducible." />
   </div>
 
-  <div className="w-max ml-60">
-    <FeatureCard
-      title="Neutral Ground"
-      description="No preferred model. No hidden advantages. Just fair, controlled experiments."
-    />
+  <div className="flex justify-center">
+    <FeatureCard title="Neutral Ground" description="No preferred model. No hidden advantages. Just fair, controlled experiments." />
   </div>
 
-  <div className="w-max ml-120">
-    <FeatureCard
-      title="Open Research"
-      description="We publish our benchmarks, methodologies, and findings for the community."
-    />
+  <div className="flex justify-center md:justify-end">
+    <FeatureCard title="Open Research" description="We publish our benchmarks, methodologies, and findings for the community." />
   </div>
 
-</section>                       
+</section>           
 <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
 
@@ -101,13 +92,12 @@ export default function AboutUs() {
                     <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
 Researchers, engineers, and designers united by curiosity about machine intelligence.
                 </p>
-                <div className='flex flex-wrap gap-2 '>
-                    <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                </div>
+                <div className="grid grid-cols-2 gap-4">
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+</div>
                     </section>
                     
         </>

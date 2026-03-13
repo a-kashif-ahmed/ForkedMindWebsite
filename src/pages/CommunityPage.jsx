@@ -69,13 +69,12 @@ export default function CommunityPage(){
                     </div>
                     </div>
                     
-                <div className='flex flex-wrap gap-2 '>
-                    <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                </div>
+                <div className="grid grid-cols-2 gap-4">
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+</div>
                     </section>
                     
 
