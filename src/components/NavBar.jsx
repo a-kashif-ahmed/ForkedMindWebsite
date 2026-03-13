@@ -64,6 +64,9 @@ export default function NavBar() {
           <a href="/arena" className="block">Find AI Arena</a>
           <a href="/about" className="block">About Us</a>
           <a href="/community" className="block">Community</a>
+          <a href="/download" className="sm:inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200">
+            Download
+          </a>
         </div>
       )}
 
