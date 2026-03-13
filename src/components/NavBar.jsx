@@ -43,9 +43,9 @@ export default function NavBar() {
           </label>
 
           {/* CTA (hidden on very small screens) */}
-          <button className="hidden sm:inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200">
+          <a href="/download" className="hidden sm:inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200">
             Download
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button

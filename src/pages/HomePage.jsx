@@ -280,9 +280,9 @@ export default function HomePage() {
                     </p>
                 </div>
                 <div className="text-center mb-12">
-                    <button className="inline-block bg-black text-white text-sm md:text-base font-bold uppercase tracking-widest px-6 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105">
+                    <a href="/download" className="inline-block bg-black text-white text-sm md:text-base font-bold uppercase tracking-widest px-6 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105">
                         Download Now
-                    </button>
+                    </a>
 
 
                 </div>

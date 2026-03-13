@@ -327,9 +327,9 @@ export default function ArenaPage() {
                     Start comparing models today. No setup required.
                 </p>
                 <div className="text-center mb-12 px-4">
-                    <button className="w-full sm:w-auto inline-block bg-black text-white text-sm md:text-base font-bold uppercase tracking-widest px-6 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105">
+                    <a href="/download" className="w-full sm:w-auto inline-block bg-black text-white text-sm md:text-base font-bold uppercase tracking-widest px-6 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105">
                         Download Now
-                    </button>
+                    </a>
 
 
                 </div>

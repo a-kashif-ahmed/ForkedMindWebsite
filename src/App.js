@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ArenaPage from "./pages/ArenaPage";
 import AboutUs from "./pages/AbouUspage";
 import CommunityPage from "./pages/CommunityPage";
+import DownloadPage from "./pages/DownloadPage";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/arena" element={<ArenaPage />} />
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/community" element={<CommunityPage/>}/>
+          <Route path="/download" element={<DownloadPage/>}/>
         </Routes>
 
       
