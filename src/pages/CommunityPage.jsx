@@ -7,7 +7,7 @@ import Card from "../components/Card";
 export default function CommunityPage(){
     return (
         <>
-        <NavBar />
+        <div className="bg-white dark:bg-black">
          <section className="font-[Passero_One] pt-28 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
                    <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%]" /></span>
@@ -77,7 +77,7 @@ export default function CommunityPage(){
 </div>
                     </section>
                     
-
+</div>
         </>
     )
 }

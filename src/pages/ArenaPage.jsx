@@ -1,5 +1,5 @@
 
-import NavBar from "../components/NavBar";
+
 import hero1 from '../assets/Hero1.png'
 
 import dashboard from '../assets/dashboard.png'
@@ -13,7 +13,8 @@ import kun from '../assets/KUn.png'
 export default function ArenaPage() {
     return (
         <>
-            <NavBar />
+            <div className="bg-white dark:bg-black">
+                <p>he</p>
             <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
                     <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%]" /></span>
@@ -257,7 +258,7 @@ export default function ArenaPage() {
 
                 </div>
                 <div className="text-center mb-12">
-                    <span className="text-2xl sm:text-3xl md:text-5xl font-black  tracking-tight">
+                    <span className="text-2xl sm:text-3xl text-black dark:text-blue dark:text-blue-200 md:text-5xl font-black  tracking-tight">
                         Our Arena
                     </span>
                 </div>
@@ -314,12 +315,12 @@ export default function ArenaPage() {
 
             <section className="font-[Passero_One] py-20 px-6 max-w-5xl mx-auto">
                 <div className="text-center mb-12">
-                    <span className="text-2xl sm:text-3xl md:text-5xl font-black  tracking-tight">
+                    <span className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white tracking-tight">
                         Enter the Arena
                     </span>
                 </div>
                 <div className="text-center mb-12">
-                    <span className="text-2xl sm:text-3xl md:text-5xl font-black  tracking-tight">
+                    <span className="text-2xl sm:text-3xl md:text-5xl text-black dark:text-white font-black  tracking-tight">
                         Understand AI
                     </span>
                 </div>
@@ -334,7 +335,7 @@ export default function ArenaPage() {
 
                 </div>
             </section>
-
+</div>
         </>
     )
 }

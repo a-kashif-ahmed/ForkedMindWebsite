@@ -1,6 +1,6 @@
 export default function DownloadCard({ title, icon, popular }) {
   return (
-    <div className="relative font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col items-center text-center gap-6 w-72 hover:scale-[1.03] transition-transform duration-200">
+    <div className="relative font-[Passero_One] bg-black text-white dark:bg-white dark:text-black rounded-3xl p-8 flex flex-col items-center text-center gap-6 w-72 hover:scale-[1.03] transition-transform duration-200">
 
       {/* Popular Badge */}
       {popular && (
@@ -20,7 +20,7 @@ export default function DownloadCard({ title, icon, popular }) {
       </h3>
 
       {/* Button */}
-      <button className="bg-white text-black px-8 py-3 rounded-full text-sm hover:bg-gray-200 transition">
+      <button className="bg-white text-black dark:bg-black dark:text-white px-8 py-3 rounded-full text-sm hover:bg-gray-200 transition">
         Download Now
       </button>
 
