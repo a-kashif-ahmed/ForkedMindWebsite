@@ -1,5 +1,5 @@
 
-import NavBar from "../components/NavBar";
+
 import hero1 from '../assets/Hero1.png'
 import board from '../assets/Board.png'
 import FeatureCard from "../components/Card";

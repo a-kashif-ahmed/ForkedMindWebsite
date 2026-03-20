@@ -47,7 +47,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
               <div className="w-12 h-6 bg-gray-300 rounded-full peer-checked:bg-gray-600 transition-colors duration-300 dark:bg-gray-700 dark:peer-checked:bg-gray-400" />
 
               <span className="absolute  -translate-y-1/2 left-1 text-sm transition-transform duration-300 peer-checked:translate-x-3">
-                <img src={icon} width="50%" height='50%'/>
+                <img src={icon} alt="heh" width="50%" height='50%'/>
               </span>
 
             </div>
