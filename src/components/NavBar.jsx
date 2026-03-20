@@ -70,12 +70,12 @@ export default function NavBar({ darkMode, setDarkMode }) {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 text-sm font-semibold">
+        <div className="md:hidden bg-white text-black border-t border-gray-200 px-6 py-4 space-y-4 text-sm font-semibold dark:bg-black/80 dark:text-white dark:border-gray-700">
           <a href="/" className="block">Home</a>
           <a href="/arena" className="block">Find AI Arena</a>
           <a href="/about" className="block">About Us</a>
           <a href="/community" className="block">Community</a>
-          <a href="/download" className="sm:inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200">
+          <a href="/download" className="block w-max bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200 dark:bg-white dark:text-black">
             Download
           </a>
         </div>
