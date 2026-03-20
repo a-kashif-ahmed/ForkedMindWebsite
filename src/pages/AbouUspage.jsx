@@ -1,6 +1,6 @@
 import cardlog from '../assets/cardlog.png'
 
-import NavBar from "../components/NavBar";
+
 import hero1 from '../assets/Hero1.png'
 import FeatureCard from "../components/Card";
 import Card from "../components/Card";
