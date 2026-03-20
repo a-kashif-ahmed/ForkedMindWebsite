@@ -18,7 +18,7 @@ export default function HomePage() {
 
     return (
         <>
-            <div className="dark:bg-black">
+            <div className="bg-white dark:bg-black">
                 {/* HERO */}
                 <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-5xl mx-auto ">
                     <div className="text-7xl md:text-9xl font-black mb-2 ">
@@ -41,7 +41,7 @@ export default function HomePage() {
                     <div className="mt-8 mb-4 text-md tracking-[0.3em] text-gray-500">
                         <span style={{ WebkitTextStroke: "0.1px var(--stroke-color)" }}>Play Against Minds</span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-4 dark:text-blue-200">
+                    <h2 className="text-3xl md:text-4xl font-black text-black tracking-tight mb-4 dark:text-blue-200">
                         Not Engines
                     </h2>
                     <p className="text-gray-600 max-w-xl mx-auto text-sm leading-relaxed mb-12">
@@ -87,7 +87,7 @@ export default function HomePage() {
                         <span className="text-4xl font-bold tracking-[0.2em] text-white mb-2" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             What Makes
                         </span>
-                        <span className="text-4xl md:text-5xl font-black  tracking-tight dark:text-blue-200">
+                        <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-blue-200">
                             ForkedMind Different
                         </span>
                         <p className="text-gray-600 mt-3 text-xl">
@@ -125,7 +125,7 @@ export default function HomePage() {
                         <span className="text-4xl font-bold tracking-[0.2em] text-white mb-2" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             Why
                         </span>
-                        <span className="text-4xl md:text-5xl font-black  tracking-tight dark:text-blue-200">
+                        <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-blue-200">
                             Chess ?
                         </span>
                         <p className="text-gray-600 mt-3 text-xl">
@@ -190,7 +190,7 @@ export default function HomePage() {
                         <span className="text-4xl font-bold text-white mb-2 mr-1" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             Built for the
                         </span>
-                        <span className="text-4xl md:text-5xl font-black  tracking-tight dark:text-blue-200">
+                        <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-blue-200">
                             Curious
                         </span>
 
@@ -255,7 +255,7 @@ export default function HomePage() {
 
                     </div>
                     <div className="text-center mb-12">
-                        <span className="text-4xl md:text-5xl font-black  tracking-tight dark:text-blue-200">
+                        <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-blue-200">
                             A Window Into AI Cognition.
                         </span>
                     </div>
@@ -269,7 +269,7 @@ export default function HomePage() {
                 <section className="font-[Passero_One] py-20 px-6 max-w-5xl mx-auto">
 
                     <div className="text-center mb-12">
-                        <span className="text-4xl md:text-5xl font-black  tracking-tight dark:text-white">
+                        <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-white">
                             Step Into the Mind of AI.
                         </span>
                     </div>
