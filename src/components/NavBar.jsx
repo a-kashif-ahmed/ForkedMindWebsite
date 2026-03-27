@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/newlogo.png";
 import icon from '../assets/logo.svg'
+import hero1 from '../assets/Hero1.png'
 
 export default function NavBar({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,25 +35,32 @@ export default function NavBar({ darkMode, setDarkMode }) {
 
           {/* Theme Toggle (visual only) */}
           <label className="flex items-center cursor-pointer select-none">
-            <span className="text-md text-gray-500 p-2">Light</span>
-            <div className="relative">
-              
-              <input
-                type="checkbox"
-                checked={darkMode}
-                onChange={() => setDarkMode(!darkMode)}
-                className="sr-only peer"
-              />
+  <span className="text-md text-gray-500 p-2">Light</span>
+  <div className="relative">
+    
+    <input
+      type="checkbox"
+      checked={darkMode}
+      onChange={() => setDarkMode(!darkMode)}
+      className="sr-only peer"
+    />
 
-              <div className="w-12 h-6 bg-gray-300 rounded-full peer-checked:bg-gray-600 transition-colors duration-300 dark:bg-gray-700 dark:peer-checked:bg-gray-400" />
+    <div className="w-12 h-6 bg-blue-500 rounded-full peer-checked:bg-gray-600 transition-colors duration-300 dark:bg-black dark:peer-checked:bg-black" />
 
-              <span className="absolute  -translate-y-1/2 left-1 text-sm transition-transform duration-300 peer-checked:translate-x-3">
-                <img src={icon} alt="heh" width="50%" height='50%'/>
-              </span>
+    <span className="absolute -translate-y-1/2 left-1 text-sm transition-transform duration-300 peer-checked:translate-x-3 transition-all ease-in">
+<img
+  src={hero1}
+  alt="heh"
+  className="w-[47%] h-[50%] rounded-full
+    bg-white shadow-[0_0_0_1px_#FFFFFF]
+       dark:bg-white dark:[box-shadow:2px_2px_0px_1px_#1e1b1b]
+    dark:invert dark:scale-75"
+/>
+    </span>
 
-            </div>
-            <span className="text-md text-gray-500 p-2">Dark</span>
-          </label>
+  </div>
+  <span className="text-md text-gray-500 p-2">Dark</span>
+</label>
           {/* CTA (hidden on very small screens) */}
           <a href="/download" className="hidden sm:inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-200 dark:bg-white dark:text-black">
             Download
