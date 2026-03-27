@@ -54,7 +54,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
   className="w-[47%] h-[50%] rounded-full
     bg-white shadow-[0_0_0_1px_#FFFFFF]
        dark:bg-white dark:[box-shadow:2px_2px_0px_1px_#1e1b1b]
-    dark:invert dark:scale-75"
+    dark:invert dark:scale-25"
 />
     </span>
 
