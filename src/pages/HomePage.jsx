@@ -20,19 +20,35 @@ export default function HomePage() {
         <>
             <div className="bg-white dark:bg-black">
                 {/* HERO */}
-                <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-5xl mx-auto ">
-                    <div className="text-7xl md:text-9xl font-black mb-2 ">
+                <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center w-full mx-auto ">
+                    <div className=" text-[24vw] font-black mb-2 ">
                         <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%] dark:invert" /></span>
 
                         <span
                             className="relative text-white dark:text-black"
-                            style={{ WebkitTextStroke: "0.1px var(--stroke-color)" }}
+                            style={{
+                                textShadow: `
+                                -1px -1px 0 var(--stroke-color),
+                                1px -1px 0 var(--stroke-color),
+                                -1px  1px 0 var(--stroke-color),
+                                1px  1px 0 var(--stroke-color)
+                                `,
+                            }}
+
                         >
                             Play
                         </span>{" "}
                         <span
-                            className="relative inline-block text-white dark:text-black"
-                            style={{ WebkitTextStroke: "0.1px var(--stroke-color)" }}
+                            className="relative text-white dark:text-black"
+                            style={{
+                                textShadow: `
+                                -1px -1px 0 var(--stroke-color),
+                                1px -1px 0 var(--stroke-color),
+                                -1px  1px 0 var(--stroke-color),
+                                1px  1px 0 var(--stroke-color)
+                                `,
+                            }}
+
                         >
                             AI
                         </span>

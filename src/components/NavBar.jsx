@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/newlogo.png";
-import icon from '../assets/logo.svg'
+
 import hero1 from '../assets/Hero1.png'
 
 export default function NavBar({ darkMode, setDarkMode }) {
