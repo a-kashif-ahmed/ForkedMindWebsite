@@ -24,10 +24,10 @@ export default function SocialCard({ title, description, icon, linkedinurl, twit
         {description}
       </p>
 <div className="text-left flex">
-        {twitterurl ?  <a href={twitterurl}><img src={twitter} className='w-[70%]'/></a> : ''}
-        {linkedinurl ? <a href={linkedinurl}><img src={linkedin} className='w-[70%]'/></a>:''}
-        {githuburl ? <a href={githuburl}><img src={github} className='w-[70%]'/></a>:''}
-        {behanceurl ? <a href={behanceurl}><img src={behance} className='w-[70%]'/></a> : ''}
+        {twitterurl ?  <a href={twitterurl}><img src={twitter} alt='twitter' className='w-[70%]'/></a> : ''}
+        {linkedinurl ? <a href={linkedinurl}><img src={linkedin} alt='linkedin' className='w-[70%]'/></a>:''}
+        {githuburl ? <a href={githuburl}><img src={github} alt='github' className='w-[70%]'/></a>:''}
+        {behanceurl ? <a href={behanceurl}><img src={behance} alt='behnace' className='w-[70%]'/></a> : ''}
       </div>
     </div>
   );

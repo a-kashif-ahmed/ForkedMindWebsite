@@ -6,7 +6,7 @@ import CommunitySocialCard from "../components/CommunitySocial";
 
 import reddit from '../assets/reddit.png'
 import discord from '../assets/discord.png'
-import Card from '../components/Card';
+// import Card from '../components/Card';
 
 export default function CommunityPage(){
 
