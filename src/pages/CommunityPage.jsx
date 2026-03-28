@@ -1,5 +1,5 @@
 
-import cardlog from '../assets/cardlog.png'
+// import cardlog from '../assets/cardlog.png'
 import hero1 from '../assets/Hero1.png'
 // import FeatureCard from "../components/Card";
 import CommunitySocialCard from "../components/CommunitySocial";
