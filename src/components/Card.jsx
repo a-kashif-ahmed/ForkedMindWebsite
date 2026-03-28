@@ -18,7 +18,7 @@ export default function Card({ title, description, icon }) {
       <p className="text-gray-300 leading-relaxed dark:invert">
         {description}
       </p>
-
+      
     </div>
   );
 }

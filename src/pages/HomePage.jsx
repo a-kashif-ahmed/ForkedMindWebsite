@@ -12,17 +12,24 @@ import chessboardicon from '../assets/chessboardicon.png'
 import beaker from '../assets/beaker.png'
 import terminal from '../assets/terminal.png'
 import network from '../assets/network.png'
+import { useInView } from '../components/useInViewHook';
 
 
 export default function HomePage() {
-
+    const [ref, visible] = useInView();
     return (
         <>
-            <div className="bg-white dark:bg-black">
+            <div className="bg-white dark:bg-black transition-colors duration-500">
                 {/* HERO */}
-                <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center w-full mx-auto ">
-                    <div className=" text-[24vw] font-black mb-2 ">
-                        <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%] dark:invert" /></span>
+                <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
+                    <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none">
+                        <span className="block leading-none">
+                            <img
+                                alt="heh"
+                                src={hero1}
+                                className="mx-auto w-[10%] block dark:invert"
+                            />
+                        </span>
 
                         <span
                             className="relative text-white dark:text-black"
@@ -64,7 +71,7 @@ export default function HomePage() {
                         Play chess directly against AI models. Observe reasoning, coaching, mistakes, and intelligence — in real time.
                     </p>
                 </section>
-                <section className="flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
+                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
 
 
                     <div className="flex-1">
@@ -84,7 +91,7 @@ export default function HomePage() {
                     </div>
 
                 </section>
-                <section className="flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
+                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
                     <div className="flex-1 font-[Passero_One]">
                         <span className="text-xl sm:text-2xl md:text-4xl leading-snug dark:text-gray-500" style={{ WebkitTextStroke: "0.1px #403d3d" }}>
                             Can you win against the latest flagship LLM ?
@@ -98,7 +105,7 @@ export default function HomePage() {
                         />
                     </div>
                 </section>
-                <section className="font-[Passero_One] py-20 px-6 max-w-5xl mx-auto">
+                <section ref={ref} className={`font-[Passero_One] py-20 px-6 max-w-5xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
                     <div className="text-center mb-12">
                         <span className="text-4xl font-bold tracking-[0.2em] text-white mb-2" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             What Makes

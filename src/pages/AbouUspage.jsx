@@ -3,7 +3,7 @@ import cardlog from '../assets/cardlog.png'
 
 import hero1 from '../assets/Hero1.png'
 import FeatureCard from "../components/Card";
-import Card from "../components/Card";
+import SocialCard from "../components/SocialCard";
 // import dashboard from '../assets/dashboard.png'
 // import Card from "../components/Card";
 // import ksmile from '../assets/KSmile.png'
@@ -14,7 +14,7 @@ import Card from "../components/Card";
 export default function AboutUs() {
     return (
         <>
-            <div className="bg-white dark:bg-black">
+            <div className="bg-white dark:bg-black transition-colors duration-500">
             <section className="font-[Passero_One] pt-28 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
                     <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%]" /></span>
@@ -93,10 +93,10 @@ export default function AboutUs() {
 Researchers, engineers, and designers united by curiosity about machine intelligence.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
-  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
-  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
-  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
-  <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
+  <SocialCard title="Yang Zixuan " description="Backend Developer" icon={cardlog} githuburl='https://github.com/TomiWebPro' />
+  <SocialCard title="Tanishq Sharma" description="UI UX designer" icon={cardlog} linkedinurl='https://www.linkedin.com/in/ertanishqsharma/' githuburl='https://github.com/Tanishq890' twitterurl='https://x.com/tanishqsharma82' behanceurl='https://www.behance.net/tanishqsharma16' />
+  <SocialCard title="Kashif Ahmed A" description="Frontend Developer" icon={cardlog} linkedinurl='https://linkedin.com/in/a-kashif-ahmed/' githuburl='https://github.com/a-kashif-ahmed'/>
+  <SocialCard title={'One Mission'} description={'Combining logic with creativity to build the future of chess.'}/>
 </div>
                     </section>
                     </div>

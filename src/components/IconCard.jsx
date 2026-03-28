@@ -3,7 +3,7 @@ export default function IconCard({ img1, img2, title, description }) {
     <div className="flex flex-col items-center text-center max-w-xs mx-auto ">
 
       {/* Circular Icon */}
-      <div className="w-28 h-28 rounded-full bg-black flex items-center justify-center mb-6 dark:invert">
+      <div className="w-32 h-32 rounded-full bg-black flex items-center justify-center mb-6 dark:invert">
          <img alt="heh" src={img1} className="object-contain w-12 h-10"/>
          <img alt="heh" src={img2} className="object-contain w-18 h-15"/>
       </div>

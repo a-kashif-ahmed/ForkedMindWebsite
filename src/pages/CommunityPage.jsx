@@ -2,12 +2,17 @@
 import cardlog from '../assets/cardlog.png'
 import hero1 from '../assets/Hero1.png'
 // import FeatureCard from "../components/Card";
-import Card from "../components/Card";
+import CommunitySocialCard from "../components/CommunitySocial";
+
+import reddit from '../assets/reddit.png'
+import discord from '../assets/discord.png'
+import Card from '../components/Card';
 
 export default function CommunityPage(){
+
     return (
         <>
-        <div className="bg-white dark:bg-black">
+        <div className="bg-white dark:bg-black transition-colors duration-500">
          <section className="font-[Passero_One] pt-28 px-6 text-center max-w-xl mx-auto">
                 <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
                    <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%]" /></span>
@@ -47,14 +52,14 @@ export default function CommunityPage(){
                     </div>
                     
                     </section><div className='flex flex-wrap justify-center gap-7'>
-                    <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+                    <CommunitySocialCard title="Discord" link='https://discord.gg/mXR9GbxW
+' description="" icon={discord}  />
 
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
-                <Card title="Tanishq Sharma" description="UIUX desinger" icon={cardlog }  />
+                <CommunitySocialCard title="Reddit" link='https://www.reddit.com/r/ForkedMind/' icon={reddit }  />
+                
                 </div>
         <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
-                <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
+                {/* <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
 
 
                     <span className="relative  text-white"
@@ -74,7 +79,7 @@ export default function CommunityPage(){
   <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
   <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
   <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
-</div>
+</div> */}
                     </section>
                     
 </div>
