@@ -39,7 +39,7 @@ export default function AboutUs() {
                     </div>
 
                     <div className="mt-8 mb-4 text-4xl tracking-[0.1em] text-white">
-                        <span style={{ WebkitTextStroke: "1px #1e1b1b" }}>Building the Observatory for AI Minds</span>
+                        <span style={{ WebkitTextStroke: "1px #1e1b1b" }}>Building the Observatory for AI Minds</span>
                     </div>
 
                     <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
@@ -57,7 +57,7 @@ export default function AboutUs() {
 
                         </span>
                         <div className="mt-8 mb-4 text-4xl tracking-[0.1em] text-white">
-                            <span style={{ WebkitTextStroke: "0.1px #1e1b1b" }}>Make AI Comparison Scientific</span>
+                            <span style={{ WebkitTextStroke: "0.1px #1e1b1b" }}>Make AI Comparison Scientific</span>
 
                         </div>
 
