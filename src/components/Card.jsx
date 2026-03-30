@@ -1,6 +1,8 @@
+import {useInView} from './useInViewHook'
 export default function Card({ title, description, icon }) {
+  const [ref,visible] = useInView();
   return (
-    <div className="font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black">
+    <div ref={ref} className={`font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black ${visible ? "slide" : "translate-y-16"} `}>
 
       {/* Icon */}
       {icon && (

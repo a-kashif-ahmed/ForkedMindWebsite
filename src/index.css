@@ -29,3 +29,6 @@
   animation: slideIn 1s ease-out forwards;
   background: inherit;
 }
+.slide{
+    animation: slideIn 1s ease-out forwards;
+}

@@ -21,13 +21,13 @@ export default function NavBar({ darkMode, setDarkMode }) {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
-          <a href="/" className={`hover:text-black transition ${tab==='home' ? 'dark:text-gray-300':''}`} onClick={()=>{
+          <a href="/" className={`hover:text-black transition dark:hover:text-white ${tab==='home' ? 'dark:text-gray-300':''}`} onClick={()=>{
             setTab('home');
             console.log(tab);
           }}>Home</a>
-          <a href="/arena" className="hover:text-black transition">Find AI Arena</a>
-          <a href="/about" className="hover:text-black transition">About Us</a>
-          <a href="/community" className="hover:text-black transition">Community</a>
+          <a href="/arena" className="hover:text-black dark:hover:text-white transition">Find AI Arena</a>
+          <a href="/about" className="hover:text-black transition dark:hover:text-white">About Us</a>
+          <a href="/community" className="hover:text-black transition dark:hover:text-white">Community</a>
         </div>
 
         {/* Right Side */}

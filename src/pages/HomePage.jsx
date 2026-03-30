@@ -22,8 +22,8 @@ export default function HomePage() {
           <div className='bg-white dark:bg-black transition-colors duration-500'>
             <div ref={ref} className={` ${visible ? "my-slide" : "opacity-0 translate-y-16"}`}>
                 {/* HERO */}
-                <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
-                    <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none">
+                <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 ">
+                    <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none transition-all ">
                         <span className="block leading-none">
                             <img
                                 alt="heh"
@@ -62,7 +62,7 @@ export default function HomePage() {
                         </span>
                     </div>
 
-                    <div className="mt-8 mb-4 text-md tracking-[0.3em] text-gray-500">
+                    <div ref={ref} className="mt-8 mb-4 text-md tracking-[0.3em] text-gray-500">
                         <span style={{ WebkitTextStroke: "0.1px var(--stroke-color)" }}>Play Against Minds</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-black text-black tracking-tight mb-4 dark:text-blue-200">
@@ -72,10 +72,10 @@ export default function HomePage() {
                         Play chess directly against AI models. Observe reasoning, coaching, mistakes, and intelligence — in real time.
                     </p>
                 </section>
-                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto  `}>
+                <section  className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto `} >
 
 
-                    <div className={`flex-1`}>
+                    <div ref={ref} className={`flex-1 ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
                         <img
                             src={board}
                             alt="Chess Board"
@@ -84,7 +84,7 @@ export default function HomePage() {
                     </div>
 
 
-                    <div className="flex-1 font-[Passero_One]">
+                    <div ref={ref} className={` ${visible ? "my-slide" : "opacity-0 translate-y-16"} flex-1 font-[Passero_One]`}>
                         <h1 className="text-xl sm:text-2xl md:text-4xl font-bold leading-snug dark:text-gray-500">
                             We all say LLMs are smarter than humans,
                             but is it really the case in the world of chess?
@@ -92,7 +92,7 @@ export default function HomePage() {
                     </div>
 
                 </section>
-                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto  `}>
+                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"}  `}>
                     <div className="flex-1 font-[Passero_One]">
                         <span className="text-xl sm:text-2xl md:text-4xl leading-snug dark:text-gray-500" style={{ WebkitTextStroke: "0.1px #403d3d" }}>
                             Can you win against the latest flagship LLM ?
@@ -120,7 +120,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <FeatureCard
+                        <FeatureCard 
                             icon={aiBrain}
                             title="Model-Agnostic Interface"
                             description="Bring any LLM — OpenAI, Claude, Gemini, Llama, or your own local model. ForkedMind doesn't care what powers the opponent."
