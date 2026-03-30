@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-
 export const useInView = () => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -8,11 +7,16 @@ export const useInView = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect(); // run only once
+          requestAnimationFrame(() => {
+            setVisible(true);
+          });
+          observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      {
+        threshold: 0,
+        rootMargin: "0px 0px -120px 0px",
+      }
     );
 
     if (ref.current) observer.observe(ref.current);

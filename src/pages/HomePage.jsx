@@ -19,7 +19,7 @@ export default function HomePage() {
     const [ref, visible] = useInView();
     return (
         <>
-            <div className="bg-white dark:bg-black transition-colors duration-500">
+            <div ref={ref} className={`bg-white dark:bg-black transition-colors duration-500 ${visible ? "my-slide" : "opacity-0 translate-y-16"}`}>
                 {/* HERO */}
                 <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
                     <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none">
@@ -71,10 +71,10 @@ export default function HomePage() {
                         Play chess directly against AI models. Observe reasoning, coaching, mistakes, and intelligence — in real time.
                     </p>
                 </section>
-                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
+                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto  `}>
 
 
-                    <div className="flex-1">
+                    <div className={`flex-1`}>
                         <img
                             src={board}
                             alt="Chess Board"
@@ -91,7 +91,7 @@ export default function HomePage() {
                     </div>
 
                 </section>
-                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
+                <section ref={ref} className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto  `}>
                     <div className="flex-1 font-[Passero_One]">
                         <span className="text-xl sm:text-2xl md:text-4xl leading-snug dark:text-gray-500" style={{ WebkitTextStroke: "0.1px #403d3d" }}>
                             Can you win against the latest flagship LLM ?
@@ -105,7 +105,7 @@ export default function HomePage() {
                         />
                     </div>
                 </section>
-                <section ref={ref} className={`font-[Passero_One] py-20 px-6 max-w-5xl mx-auto ${visible ? "my-slide" : "opacity-0 translate-y-16"} `}>
+                <section ref={ref} className={`font-[Passero_One] py-20 px-6 max-w-5xl mx-auto $   `}>
                     <div className="text-center mb-12">
                         <span className="text-4xl font-bold tracking-[0.2em] text-white mb-2" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             What Makes
@@ -162,7 +162,8 @@ export default function HomePage() {
                 <section className="flex max-h-min items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
 
 
-                    <div className="flex-1">
+                    
+                        <div ref={ref} className={`flex-1 $  `}>
                         <FeatureCard title="Structed Rules" description='Perfect sandbox — every move is verifiable against a known ruleset.' />
                     </div>
 
@@ -178,7 +179,8 @@ export default function HomePage() {
 
                     </div>
 
-                    <div className="flex-1">
+                    
+                        <div ref={ref} className={`flex-1 $  `}>
                         <FeatureCard title="Sequential Reasoning" description='Each move depends on understanding what came before and anticipating what comes next.' />
                     </div>
 
@@ -186,7 +188,8 @@ export default function HomePage() {
                 <section className="flex max-h-min items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
 
 
-                    <div className="flex-1">
+                    
+                        <div ref={ref} className={`flex-1 $  `}>
                         <FeatureCard title="Clear Verification" description='Unlike open-ended text, chess has right and wrong answers. Mistakes are undeniable.' />
                     </div>
 
@@ -203,7 +206,8 @@ export default function HomePage() {
 
                     </div>
 
-                    <div className="flex-1">
+                    
+                        <div ref={ref} className={`flex-1 $  `}>
                         <FeatureCard title="Reveals Strength & Flaws " description='Watch models struggle with tactics, sacrifice material illogically, or find creative solutions.' />
                     </div>
 
@@ -221,7 +225,8 @@ export default function HomePage() {
                     <section className="flex max-h-min items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
 
 
-                        <div className="flex-1">
+                        
+                        <div ref={ref} className={`flex-1 $  `}>
                             <IconCard img1={beaker} img2={hero1} title="AI Researchers" description='Unlike open-ended text, chess has right and wrong answers. Mistakes are undeniable.' />
                         </div>
 
@@ -238,7 +243,8 @@ export default function HomePage() {
 
                         </div>
 
-                        <div className="flex-1">
+                        
+                        <div ref={ref} className={`flex-1 $  `}>
                             <IconCard img1={chessboardicon} img2={hero1} title="Chess Enthusiats " description='Watch models struggle with tactics, sacrifice material illogically, or find creative solutions.' />
                         </div>
 
@@ -247,7 +253,8 @@ export default function HomePage() {
                     <section className="flex max-h-min items-center gap-6 px-6 py-16 max-w-6xl mx-auto">
 
 
-                        <div className="flex-1">
+                        
+                        <div ref={ref} className={`flex-1 $  `}>
                             <IconCard img1={terminal} img2={hero1} title="Developers" description='Unlike open-ended text, chess has right and wrong answers. Mistakes are undeniable.' />
                         </div>
 
@@ -264,13 +271,19 @@ export default function HomePage() {
 
                         </div>
 
-                        <div className="flex-1">
+                       <div
+  ref={ref}
+  className={`
+    flex-1 transition-all duration-500 ease-out
+    ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
+  `}
+>
                             <IconCard img1={network} img2={hero1} title="Curious Minds " description='Watch models struggle with tactics, sacrifice material illogically, or find creative solutions.' />
                         </div>
 
                     </section>
                 </section>
-                <section className="font-[Passero_One] py-20 px-6 max-w-5xl mx-auto">
+                <section ref={ref} className={`font-[Passero_One] py-20 px-6 max-w-5xl mx-auto $  `}>
                     <div className="text-center mb-12">
                         <span className="text-4xl font-bold text-white mb-2 mr-1" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                             Beyond a Game.
@@ -289,7 +302,7 @@ export default function HomePage() {
                     </div>
                 </section>
 
-                <section className="font-[Passero_One] py-20 px-6 max-w-5xl mx-auto">
+                <section ref={ref} className={`font-[Passero_One] py-20 px-6 max-w-5xl mx-auto $  `}>
 
                     <div className="text-center mb-12">
                         <span className="text-4xl text-black md:text-5xl font-black  tracking-tight dark:text-white">
