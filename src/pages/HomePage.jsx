@@ -19,7 +19,8 @@ export default function HomePage() {
     const [ref, visible] = useInView();
     return (
         <>
-            <div ref={ref} className={`bg-white dark:bg-black transition-colors duration-500 ${visible ? "my-slide" : "opacity-0 translate-y-16"}`}>
+          <div className='bg-white dark:bg-black transition-colors duration-500'>
+            <div ref={ref} className={` ${visible ? "my-slide" : "opacity-0 translate-y-16"}`}>
                 {/* HERO */}
                 <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
                     <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none">
@@ -322,6 +323,7 @@ export default function HomePage() {
 
                     </div>
                 </section>
+            </div>
             </div>
         </>
     )

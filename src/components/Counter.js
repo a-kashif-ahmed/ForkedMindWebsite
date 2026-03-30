@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
 const formatNumber = (num, end) => {
-  if (end % 1 !== 0) {
-    return num.toFixed(2); // decimal numbers
+  // Handle K format
+  if (end >= 1000 && end < 1000000) {
+    return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
   }
-  return Math.floor(num); // integers
+
+  // Handle decimals (like 1.25)
+  if (end % 1 !== 0) {
+    return num.toFixed(2).replace(/\.00$/, "");
+  }
+
+  // Normal integers
+  return Math.floor(num);
 };
 
 const Counter = ({ end, duration = 1500 }) => {

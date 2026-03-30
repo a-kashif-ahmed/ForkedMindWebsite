@@ -15,10 +15,10 @@ export default function ArenaPage() {
     return (
         <>
             <div className="bg-white dark:bg-black transition-colors duration-500">
-                <p>he</p>
+                
                 <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
-                    
-                        <div className="text-4xl sm:text-6xl md:text-8xl font-black leading-none mb-2 pointer-events-none">
+
+                    <div className="text-4xl sm:text-6xl md:text-8xl font-black leading-none mb-2 pointer-events-none">
                         <span className="block leading-none">
                             <img
                                 alt="heh"
@@ -49,20 +49,44 @@ export default function ArenaPage() {
                     {/* BOTTOM STATS */}
                     <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-20 mt-16 text-2xl sm:text-3xl md:text-4xl font-black">
 
-                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b", textShadow: "2px 2px 0px rgba(0,0,0,0.25)" }}>
-                            <Counter end={42} />+
+                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b",}}>
+                            <span className="block">
+                                <Counter end={42} />+
+                            </span>
+
+                            <span className="block text-xl font-normal mt-1 text-black dark:text-white">
+                                Models Tested
+                            </span>
                         </span>
 
-                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b", textShadow: "2px 2px 0px rgba(0,0,0,0.25)" }}>
-                            <Counter end={12800} />
+                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b",}}>
+                            <span className="block">
+                                <Counter end={12800} />
+                            </span>
+
+                            <span className="block text-xl font-normal mt-1  text-black dark:text-white">
+                                Matches Played
+                            </span>
                         </span>
 
-                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b", textShadow: "2px 2px 0px rgba(0,0,0,0.25)" }}>
-                            <Counter end={3200} />
+                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b",}}>
+                            <span className="block">
+                                <Counter end={3200} />
+                            </span>
+
+                            <span className="block text-xl font-normal mt-1 text-black dark:text-white">
+                                Illegal Moves Caught
+                            </span>
                         </span>
 
-                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b", textShadow: "2px 2px 0px rgba(0,0,0,0.25)" }}>
-                            <Counter end={1.25} />
+                        <span className="text-white" style={{ WebkitTextStroke: "0.3px #1e1b1b",}}>
+                            <span className="block">
+                                <Counter end={1.25} />s
+                            </span>
+
+                            <span className="block text-xl font-normal mt-1 text-black dark:text-white">
+                                Avg Latency
+                            </span>
                         </span>
 
                     </div>

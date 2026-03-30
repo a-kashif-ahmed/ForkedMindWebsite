@@ -5,11 +5,13 @@
     --stroke-color: #1e1b1b;
     scroll-behavior:smooth;
     animation: slideIn .85s ease-in-out;
+     
     
 }
 
 .dark {
     --stroke-color: #ffffff;
+
 }
 
 @keyframes slideIn {
@@ -25,4 +27,5 @@
 }
 .my-slide {
   animation: slideIn 1s ease-out forwards;
+  background: inherit;
 }
