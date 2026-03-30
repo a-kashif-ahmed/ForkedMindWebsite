@@ -9,9 +9,18 @@ export default function DownloadPage(){
     return (
         <>
         <div className="bg-white dark:bg-black transition-colors duration-500">
-         <section className="font-[Passero_One] pt-28 px-6 text-center max-w-xl mx-auto">
-                <div className="text-4xl sm:text-6xl md:text-8xl font-black mb-2">
-                    <span className="block relative -top-6 text-4xl text-center"><img alt="heh" src={hero1} className="mx-auto w-[10%]" /></span>
+         <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 my-slide">
+                    
+                        <div className="text-4xl sm:text-6xl md:text-8xl font-black leading-none mb-2 pointer-events-none">
+                        <span className="block leading-none">
+                            <img
+                                alt="heh"
+                                src={hero1}
+                                className="mx-auto w-[10%] block dark:invert"
+                            />
+                        </span>
+
+
 
                     <span className="relative  text-white"
                         style={{ WebkitTextStroke: "0.1px #1e1b1b" }}
