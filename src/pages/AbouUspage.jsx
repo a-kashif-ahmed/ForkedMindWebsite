@@ -38,7 +38,7 @@ export default function AboutUs() {
 
                     </div>
 
-                    <div className="mt-8 mb-4 text-4xl tracking-[0.1em] text-white">
+                    <div className="mt-8 mb-4 text-4xl tracking-[0.1em] text-white ">
                         <span style={{ WebkitTextStroke: "1px #1e1b1b" }}>Building the Observatory for AI Minds</span>
                     </div>
 
