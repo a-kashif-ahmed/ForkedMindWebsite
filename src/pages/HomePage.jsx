@@ -315,7 +315,7 @@ export default function HomePage() {
                             The board is set. The model is waiting. Make your move.
                         </p>
                     </div>
-                    <div className="text-center mb-12">
+                    <div ref={ref} className={`text-center mb-12 ${visible ? "slide" : "opacity-0 translate-y-16"} `}>
                         <a href="/download" className="inline-block bg-black text-white text-sm md:text-base font-bold uppercase tracking-widest px-6 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105 dark:bg-white dark:text-black">
                             Download Now
                         </a>

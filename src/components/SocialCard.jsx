@@ -2,10 +2,12 @@ import behance from '../assets/behance.png'
 import twitter from '../assets/twitter.png'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
+import { useInView } from './useInViewHook'
 
 export default function SocialCard({ title, description, icon, linkedinurl, twitterurl, githuburl, behanceurl }) {
+  const [ref,visible] = useInView();
   return (
-    <div className="font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black">
+    <div ref={ref} className={` ${visible ? "slide" : "opacity-0 translate-y-16"} font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black`}>
 
       {/* Icon */}
       {icon && (

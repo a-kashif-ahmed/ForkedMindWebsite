@@ -1,7 +1,9 @@
+import { useInView } from "./useInViewHook";
 export default function CommunitySocialCard({ title, description, icon, link }) {
+  const [ref, visible] = useInView();
   return (
     <a href={link}>
-    <div className="font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col  gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black">
+    <div ref={ref} className={` ${visible ? "slide" : "opacity-0 translate-y-16"}  font-[Passero_One] bg-black text-white rounded-3xl p-8 flex flex-col  gap-4 hover:scale-[1.02] transition-transform duration-200 dark:bg-white dark:text-black`}>
 
       {/* Icon */}
       {icon && (

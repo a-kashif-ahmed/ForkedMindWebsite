@@ -1,6 +1,9 @@
+import {useInView} from './useInViewHook'
 export default function IconCard({ img1, img2, title, description }) {
+  const [ref,visible] = useInView();
   return (
-    <div className="flex flex-col items-center text-center max-w-xs mx-auto ">
+
+    <div ref={ref} className={`flex flex-col items-center text-center max-w-xs mx-auto ${visible ? "slide" : "opacity-0 translate-y-16"} `}>
 
       {/* Circular Icon */}
       <div className="w-32 h-32 rounded-full bg-black flex items-center justify-center mb-6 dark:invert">
