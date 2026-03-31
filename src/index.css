@@ -26,9 +26,9 @@
     }
 }
 .my-slide {
-  animation: slideIn 1s ease-out forwards;
+  animation: slideIn 1.33s ease-in-out alternate;
   background: inherit;
 }
 .slide{
-    animation: slideIn 1s ease-out forwards;
+    animation: slideIn 1.33s ease-in-out forwards;
 }

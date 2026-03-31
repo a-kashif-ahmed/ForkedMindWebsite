@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/newlogo.png";
 import { useInView } from "./useInViewHook";
 import hero1 from '../assets/Hero1.png'
+import { href } from "react-router-dom";
 
 export default function NavBar({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +15,11 @@ export default function NavBar({ darkMode, setDarkMode }) {
       <div ref={ref} className={`  ${visible ? "slide" : "opacity-0 translate-y-16"} flex items-center justify-between h-20 px-6 md:px-10 max-w-7xl mx-auto`}>
 
         {/* Logo */}
-        <img
+        <a href="/"><img 
           src={logo}
           alt="ForkedMind logo"
           className="h-10 w-auto"
-        />
+        /></a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
