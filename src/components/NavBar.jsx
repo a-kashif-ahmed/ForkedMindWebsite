@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../assets/newlogo.png";
 import { useInView } from "./useInViewHook";
 import hero1 from '../assets/Hero1.png'
-import { href } from "react-router-dom";
+
 
 export default function NavBar({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
