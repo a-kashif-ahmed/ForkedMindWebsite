@@ -61,7 +61,7 @@ export default function CommunityPage(){
                     </div>
                     
                     </section><div className='flex flex-wrap justify-center gap-7'>
-                    <CommunitySocialCard title="Discord" link='https://discord.gg/mXR9GbxW
+                    <CommunitySocialCard title="Discord" link='https://discord.gg/W5f3tNQZXm
 ' description="" icon={discord}  />
 
                 <CommunitySocialCard title="Reddit" link='https://www.reddit.com/r/ForkedMind/' icon={reddit }  />

@@ -19,7 +19,7 @@ export default function HomePage() {
     const [ref, visible] = useInView();
     return (
         <>
-          <div className='bg-white dark:bg-black transition-colors duration-900'>
+          <div className='bg-white dark:bg-black '>
             <div ref={ref} className={` ${visible ? "my-slide" : "opacity-0 translate-y-16"}`}>
                 {/* HERO */}
                 <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 ">
