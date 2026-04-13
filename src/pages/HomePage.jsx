@@ -17,28 +17,34 @@ import network from '../assets/network.png'
 import { useEffect, useState } from 'react';
 import { useInView } from '../components/useInViewHook';
 
-const frames = [ hero3, hero2, hero1];
+const frames = [hero3, hero2, hero1,  hero1];
 export default function HomePage() {
     const [ref, visible] = useInView();
     const [frame, setFrame] = useState(0);
+    const [prevFrame, setPrevFrame] = useState(0);
+    const [fade, setFade] = useState(false);
 
-useEffect(() => {
-  if (!visible) return;
+    useEffect(() => {
+        if (!visible) return;
 
-  let current = 0;
+        let current = 0;
 
-  const interval = setInterval(() => {
-    current++;
+        const interval = setInterval(() => {
+            current++;
 
-    if (current >= frames.length) {
-      clearInterval(interval); // 🛑 stop after last frame
-    } else {
-      setFrame(current);
-    }
-  }, 350);
+            if (current >= frames.length) {
+                clearInterval(interval);
+            } else {
+                setPrevFrame(current - 1);
+                setFrame(current);
+                setFade(true);
 
-  return () => clearInterval(interval);
-}, [visible]);
+                setTimeout(() => setFade(false), 10); // fade duration
+            }
+        }, 350);
+
+        return () => clearInterval(interval);
+    }, [visible]);
     return (
         <>
             <div className='bg-white dark:bg-black '>
@@ -47,11 +53,25 @@ useEffect(() => {
                     <section className="font-[Passero_One] pt-28  text-center w-full mx-auto transition-all duration-500 ">
                         <div className="text-[24vw] font-black leading-none mb-2 pointer-events-none transition-all ">
                             <span className="block leading-none">
-                                <img
-                                    alt="hero"
-                                    src={frames[frame]}
-                                    className="mx-auto w-[10%] block dark:invert transition-opacity duration-150"
-                                />
+                                <div className="relative mx-auto w-[10%]">
+
+                                    {/* Previous frame */}
+                                    <img
+                                        src={frames[prevFrame]}
+                                        alt="hero-prev"
+                                        className={`absolute top-0 left-0 w-full transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"
+                                            } dark:invert`}
+                                    />
+
+                                    {/* Current frame */}
+                                    <img
+                                        src={frames[frame]}
+                                        alt="hero"
+                                        className={`w-full transition-opacity duration-200 ${fade ? "opacity-100" : "opacity-0"
+                                            } dark:invert`}
+                                    />
+
+                                </div>
                             </span>
 
                             <span

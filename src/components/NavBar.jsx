@@ -19,6 +19,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
           src={logo}
           alt="ForkedMind logo"
           className="h-10 w-auto"
+          
         /></a>
 
         {/* Desktop Nav */}

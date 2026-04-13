@@ -4,6 +4,7 @@
 :root {
     --stroke-color: #1e1b1b;
     scroll-behavior:smooth;
+    scroll-behavior: smooth;
     animation: slideIn .85s ease-in-out;
      
     
