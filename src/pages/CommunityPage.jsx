@@ -41,7 +41,7 @@ export default function CommunityPage(){
                 </div>
 
                 <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
-                    Researchers, engineers, and AI enthusiasts building the future of transparent model evaluation — together.
+                    Researchers, engineers, and AI enthusiasts building the future of transparent model evaluation , together.
                 </p>
             </section>
               <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">

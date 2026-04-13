@@ -43,7 +43,7 @@ export default function AboutUs() {
                     </div>
 
                     <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
-                        Watch AI models play chess, analyze their thinking, and uncover how intelligence really works.ForkedMind was born from a simple question: how do you truly compare artificial intelligence? Not by benchmarks alone, but by watching AI think, play, and make mistakes — in real time.
+                        Watch AI models play chess, analyze their thinking, and uncover how intelligence really works.ForkedMind was born from a simple question: how do you truly compare artificial intelligence? Not by benchmarks alone, but by watching AI think, play, and make mistakes , in real time.
                     </p>
                 </section>
                 <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
@@ -65,7 +65,7 @@ export default function AboutUs() {
 
                     </div>
                     <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
-                        We believe the future of AI development depends on rigorous, transparent evaluation. Chess is our laboratory — a domain complex enough to reveal reasoning depth, yet structured enough to measure it precisely.
+                        We believe the future of AI development depends on rigorous, transparent evaluation. Chess is our laboratory , a domain complex enough to reveal reasoning depth, yet structured enough to measure it precisely.
                     </p>
                 </section>
                 <section className="max-w-6xl mx-auto px-6 py-20 space-y-16">

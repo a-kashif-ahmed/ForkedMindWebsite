@@ -286,7 +286,7 @@ export default function ArenaPage() {
                                 Bring Your Own LLM
                             </span>
                             <p className="text-gray-600 max-w-xl mx-auto text-md leading-relaxed mb-12">
-                                Connect any model via API — OpenAI, Anthropic, Mistral, open-source, or custom fine-tunes.
+                                Connect any model via API : OpenAI, Anthropic, Mistral, open-source, or custom fine-tunes.
                             </p>
                             <span className="text-4xl font-bold text-white mb-2 mr-1" style={{ WebkitTextStroke: "0.01px #1e1b1b" }}>
                                 Neutral Playground
