@@ -15,7 +15,7 @@ import beaker from '../assets/beaker.png'
 import terminal from '../assets/terminal.png'
 import network from '../assets/network.png'
 import { useEffect, useState } from 'react';
-import visitWidget from '../components/VisitsWidget';
+
 import { useInView } from '../components/useInViewHook';
 import VisitWidget from '../components/VisitsWidget';
 
