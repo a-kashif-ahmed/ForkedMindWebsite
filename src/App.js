@@ -27,7 +27,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch('https://api.counterapi.dev/v2/spaces-team-3846/forked/up')
+    // fetch('https://api.counterapi.dev/v2/spaces-team-3846/forked/up')
     fetch('https://api.counterapi.dev/v2/spaces-team-3846/forked')
 
       .then(res => res.json())

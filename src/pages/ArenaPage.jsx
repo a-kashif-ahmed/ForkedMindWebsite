@@ -350,6 +350,7 @@ export default function ArenaPage({totalVisits}) {
 
                     </div>
                 </section>
+                <VisitWidget totalVisits={totalVisits}/>
             </div>
         </>
     )
