@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
     --stroke-color: #1e1b1b;
     scroll-behavior:smooth;
