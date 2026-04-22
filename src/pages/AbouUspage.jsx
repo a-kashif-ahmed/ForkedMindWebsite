@@ -1,6 +1,6 @@
 import cardlog from '../assets/cardlog.png'
 
-
+import VisitWidget from '../components/VisitsWidget';
 import hero1 from '../assets/Hero1.png'
 import FeatureCard from "../components/Card";
 import SocialCard from "../components/SocialCard";
@@ -11,7 +11,7 @@ import SocialCard from "../components/SocialCard";
 // import klaugh from '../assets/KLaugh.png'
 // import kun from '../assets/KUn.png'
 
-export default function AboutUs() {
+export default function AboutUs({totalVisits}) {
     return (
         <>
             <div className="bg-white dark:bg-black transition-colors duration-500">
@@ -108,7 +108,10 @@ export default function AboutUs() {
                         <SocialCard title={'One Mission'} description={'Combining logic with creativity to build the future of chess.'} />
                     </div>
                 </section>
+            
+            <VisitWidget totalVisits={totalVisits}/>
             </div>
+
         </>
     )
 }

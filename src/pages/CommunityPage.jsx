@@ -1,4 +1,4 @@
-
+import VisitWidget from '../components/VisitsWidget';
 // import cardlog from '../assets/cardlog.png'
 import hero1 from '../assets/Hero1.png'
 // import FeatureCard from "../components/Card";
@@ -8,7 +8,7 @@ import reddit from '../assets/reddit.png'
 import discord from '../assets/discord.png'
 // import Card from '../components/Card';
 
-export default function CommunityPage(){
+export default function CommunityPage({totalVisits}){
 
     return (
         <>
@@ -90,7 +90,7 @@ export default function CommunityPage(){
   <Card title="Tanishq Sharma" description="UIUX designer" icon={cardlog} />
 </div> */}
                     </section>
-                    
+                    <VisitWidget totalVisits={totalVisits}/>
 </div>
         </>
     )

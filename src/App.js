@@ -8,20 +8,42 @@ import DownloadPage from "./pages/DownloadPage";
 import NavBar from "./components/NavBar";
 
 function App() {
-
+  const [totalVisits, setTotalVisits] = useState(0);
   const [darkMode, setDarkMode] = useState(
-  localStorage.getItem("theme") === "dark"
-);
+    localStorage.getItem("theme") === "dark"
+  );
 
-useEffect(() => {
-  if (darkMode) {
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
-  }
-}, [darkMode]);
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
+
+
+
+
+  useEffect(() => {
+    fetch('https://api.counterapi.dev/v2/spaces-team-3846/forked/up')
+    fetch('https://api.counterapi.dev/v2/spaces-team-3846/forked')
+
+      .then(res => res.json())
+
+      .then(data => {
+        setTotalVisits(data.data.up_count-data.data.down_count)
+        console.log("Upcount",data.data.up_count);
+        console.log("downCount",data.data.down_count);
+        console.log("Total Count",data.data.up_count-data.data.down_count)
+      });
+
+  }, []);
+
+
+
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <BrowserRouter>
@@ -29,11 +51,11 @@ useEffect(() => {
         <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/arena" element={<ArenaPage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/community" element={<CommunityPage />} />
-          <Route path="/download" element={<DownloadPage />} />
+          <Route path="/" element={<HomePage totalVisits={totalVisits}/>} />
+          <Route path="/arena" element={<ArenaPage totalVisits={totalVisits} />} />
+          <Route path="/about" element={<AboutUs  totalVisits={totalVisits} />} />
+          <Route path="/community" element={<CommunityPage totalVisits={totalVisits} />} />
+          <Route path="/download" element={<DownloadPage totalVisits={totalVisits} />} />
         </Routes>
 
       </BrowserRouter>

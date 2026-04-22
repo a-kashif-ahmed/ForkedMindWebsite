@@ -1,11 +1,11 @@
-
+import VisitWidget from '../components/VisitsWidget';
 import cardlog from '../assets/cardlog.png'
 import hero1 from '../assets/Hero1.png'
 // import FeatureCard from "../components/Card";
 import Card from "../components/Card";
 import DownloadCard from "../components/DownloadCard";
 
-export default function DownloadPage(){
+export default function DownloadPage({totalVisits}){
     return (
         <>
         <div className="bg-white dark:bg-black transition-colors duration-500">
@@ -91,7 +91,7 @@ export default function DownloadPage(){
                 <Card title="Mobile" description="iOS 16+ or Android 10+, 4GB RAM, 100MB Space" icon={cardlog }  />
                 </div>
                     </section>
-                    
+                    <VisitWidget totalVisits={totalVisits}/>
 </div>
         </>
     )

@@ -15,10 +15,12 @@ import beaker from '../assets/beaker.png'
 import terminal from '../assets/terminal.png'
 import network from '../assets/network.png'
 import { useEffect, useState } from 'react';
+import visitWidget from '../components/VisitsWidget';
 import { useInView } from '../components/useInViewHook';
+import VisitWidget from '../components/VisitsWidget';
 
 const frames = [hero3, hero2, hero1,  hero1];
-export default function HomePage() {
+export default function HomePage({totalVisits}) {
     const [ref, visible] = useInView();
     const [frame, setFrame] = useState(0);
     const [prevFrame, setPrevFrame] = useState(0);
@@ -367,6 +369,7 @@ export default function HomePage() {
                         </div>
                     </section>
                 </div>
+                <VisitWidget totalVisits={totalVisits}/>
             </div>
         </>
     )

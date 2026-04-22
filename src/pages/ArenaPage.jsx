@@ -1,7 +1,7 @@
 import Counter from '../components/Counter'
 
 import hero1 from '../assets/Hero1.png'
-
+import VisitWidget from '../components/VisitsWidget';
 import dashboard from '../assets/dashboard.png'
 import Card from "../components/Card";
 import ksmile from '../assets/KSmile.png'
@@ -11,7 +11,7 @@ import kun from '../assets/KUn.png'
 import dashboarddark from '../assets/dashboarddark.png'
 
 
-export default function ArenaPage() {
+export default function ArenaPage({totalVisits}) {
     return (
         <>
             <div className="bg-white dark:bg-black transition-colors duration-500">
