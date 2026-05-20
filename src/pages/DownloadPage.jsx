@@ -64,7 +64,7 @@ export default function DownloadPage({totalVisits}){
   <DownloadCard icon={cardlog} popular={true} title="Mac OS (Apple HW)" />
   <DownloadCard icon={cardlog} popular={false} title="Mac OS (Intel)" />
   <DownloadCard icon={cardlog} popular={false} title="Linux" /> */}
-  <DownloadCard icon={cardlog} popular={true} title="Web" link='/flutter/index.html' text='Play Now' isDownload={false}  />
+  <DownloadCard icon={cardlog} popular={true} title="Web" link='/flutter/' text='Play Now' isDownload={false}  />
   <DownloadCard icon={cardlog} popular={true} title="Android" link="/ForkedMind.apk" text="Download Now" isDownload={true}/>
   
   <DownloadCard icon={cardlog} popular={true} title="iOS" text={"Coming Soon"}/>
