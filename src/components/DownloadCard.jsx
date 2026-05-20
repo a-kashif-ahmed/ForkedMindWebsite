@@ -1,5 +1,5 @@
 import { useInView } from "./useInViewHook";
-export default function DownloadCard({ title, icon, popular }) {
+export default function DownloadCard({ title, icon, popular,link, text, isDownload }) {
   const [ref,visible] = useInView();
   return (
     <div ref={ref} className={` ${visible ? "slide" : "opacity-0 translate-y-16"} relative font-[Passero_One] bg-black text-white dark:bg-white dark:text-black rounded-3xl p-8 flex flex-col items-center text-center gap-6 w-72 hover:scale-[1.03] transition-transform duration-200`}>
@@ -22,9 +22,12 @@ export default function DownloadCard({ title, icon, popular }) {
       </h3>
 
       {/* Button */}
-      <button className="bg-white text-black dark:bg-black dark:text-white px-8 py-3 rounded-full text-sm hover:bg-gray-200 transition">
-        Download Now
-      </button>
+      {isDownload ? <a  href={link} download><button className="bg-white text-black dark:bg-black dark:text-white px-8 py-3 rounded-full text-sm hover:bg-gray-200 transition">
+        {text}
+      </button></a> :  <a  href={link} ><button className="bg-white text-black dark:bg-black dark:text-white px-8 py-3 rounded-full text-sm hover:bg-gray-200 transition">
+        {text}
+      </button></a>}
+     
 
     </div>
   );

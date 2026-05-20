@@ -5,6 +5,7 @@ import hero1 from '../assets/Hero1.png'
 import Card from "../components/Card";
 import DownloadCard from "../components/DownloadCard";
 
+
 export default function DownloadPage({totalVisits}){
     return (
         <>
@@ -57,14 +58,16 @@ export default function DownloadPage({totalVisits}){
                     </div>
                     
                     </section>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto justify-items-center">
 
-  <DownloadCard icon={cardlog} popular={true} title="Windows" />
+  {/* <DownloadCard icon={cardlog} popular={true} title="Windows" />
   <DownloadCard icon={cardlog} popular={true} title="Mac OS (Apple HW)" />
   <DownloadCard icon={cardlog} popular={false} title="Mac OS (Intel)" />
-  <DownloadCard icon={cardlog} popular={false} title="Linux" />
-  <DownloadCard icon={cardlog} popular={true} title="Android" />
-  <DownloadCard icon={cardlog} popular={true} title="iOS" />
+  <DownloadCard icon={cardlog} popular={false} title="Linux" /> */}
+  <DownloadCard icon={cardlog} popular={true} title="Web" link='/flutter/index.html' text='Play Now' isDownload={false}  />
+  <DownloadCard icon={cardlog} popular={true} title="Android" link="/ForkedMind.apk" text="Download Now" isDownload={true}/>
+  
+  <DownloadCard icon={cardlog} popular={true} title="iOS" text={"Coming Soon"}/>
 
 </div>
         <section className="font-[Passero_One] pt-28 pb-20 px-6 text-center max-w-xl mx-auto">
@@ -84,7 +87,7 @@ export default function DownloadPage({totalVisits}){
                     </div>
                     
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    <Card title="Windows" description=" Windows 10 or newer , 4GB RAM, 200MB Disk Space" icon={cardlog }  />
+                    <Card title="Windows" description=" Windows 10 or newer , 4GB RAM, 200MB Disk Space" icon={cardlog}  />
 
                 <Card title="macOS " description=" Mac OS 12 Monterey or newer , 4GB RAM, 200MB Disk Space" icon={cardlog }  />
                 <Card title="Linux" description=" Ubuntu 20.04+, Fedora 36+, or equivalent, 4GB RAM, 200MB Disk Space" icon={cardlog }  />

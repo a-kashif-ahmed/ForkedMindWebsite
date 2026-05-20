@@ -6,6 +6,7 @@ import AboutUs from "./pages/AbouUspage";
 import CommunityPage from "./pages/CommunityPage";
 import DownloadPage from "./pages/DownloadPage";
 import NavBar from "./components/NavBar";
+import PlayChess from "./pages/PlayChess";
 
 function App() {
   const [totalVisits, setTotalVisits] = useState(0);
@@ -56,6 +57,7 @@ function App() {
           <Route path="/about" element={<AboutUs  totalVisits={totalVisits} />} />
           <Route path="/community" element={<CommunityPage totalVisits={totalVisits} />} />
           <Route path="/download" element={<DownloadPage totalVisits={totalVisits} />} />
+          <Route path="/play" element={<PlayChess />} />
         </Routes>
 
       </BrowserRouter>
