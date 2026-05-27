@@ -2,7 +2,7 @@
 
 import hero1 from '../assets/Hero1.png'
 import hero2 from '../assets/hero2.png'
-import hero3 from '../assets/Hero1.png'
+// import hero3 from '../assets/Hero1.png'
 import board from '../assets/Board.png'
 import FeatureCard from "../components/Card";
 import eye from '../assets/eye.png'
@@ -19,8 +19,8 @@ import { useEffect, useState } from 'react';
 import { useInView } from '../components/useInViewHook';
 import VisitWidget from '../components/VisitsWidget';
 
-const frames = [hero3, hero2, hero1,  hero1];
-export default function HomePage({totalVisits}) {
+const frames = [hero1, hero2, hero1, hero1];
+export default function HomePage({ totalVisits }) {
     const [ref, visible] = useInView();
     const [frame, setFrame] = useState(0);
     const [prevFrame, setPrevFrame] = useState(0);
@@ -116,6 +116,21 @@ export default function HomePage({totalVisits}) {
                         <p className="text-gray-600 max-w-xl mx-auto text-sm leading-relaxed mb-12">
                             Play chess directly against AI models. Observe reasoning, coaching, mistakes, and intelligence in real time.
                         </p>
+                        <div className="flex items-center justify-center gap-4 mt-8">
+
+                            <a href="/download"
+                                className="inline-block bg-black text-white text-sm font-bold uppercase tracking-widest px-8 py-3 rounded-full border-2 border-black hover:bg-white hover:text-black transition duration-300 shadow-md hover:scale-105 dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white"
+                            >
+                                Play Now
+                            </a>
+                        </div>
+                        <div className="flex items-center justify-center gap-4 mt-8">
+                            <a href='/'
+                                className="text-sm font-bold uppercase tracking-widest text-gray-500 hover:text-black dark:hover:text-white transition duration-300"
+                            >
+                                How it works ↓
+                            </a>
+                        </div>
                     </section>
                     <section className={`flex items-center gap-6 px-6 py-16 max-w-6xl mx-auto `} >
 
@@ -369,7 +384,7 @@ export default function HomePage({totalVisits}) {
                         </div>
                     </section>
                 </div>
-                <VisitWidget totalVisits={totalVisits}/>
+                <VisitWidget totalVisits={totalVisits} />
             </div>
         </>
     )
