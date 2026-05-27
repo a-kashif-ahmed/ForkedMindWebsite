@@ -106,9 +106,9 @@ export default function AboutUs({totalVisits}) {
                         <SocialCard title="Tanishq Sharma" description="UI UX designer" icon={cardlog} linkedinurl='https://www.linkedin.com/in/ertanishqsharma/' githuburl='https://github.com/Tanishq890' twitterurl='https://x.com/tanishqsharma82' behanceurl='https://www.behance.net/tanishqsharma16' />
                         <SocialCard title="Kashif Ahmed A" description="Frontend Developer" icon={cardlog} linkedinurl='https://linkedin.com/in/a-kashif-ahmed/' githuburl='https://github.com/a-kashif-ahmed' />
                         <SocialCard title={'One Mission'} description={'Combining logic with creativity to build the future of chess.'} /> */}
-                        <SocialCard title={'Full stack dev' }/>
+                        <SocialCard title={'Full stack dev' } icon={cardlog}/>
                         
-                        <SocialCard title={'Design Lead' }/>
+                        <SocialCard title={'Design Lead' } icon={cardlog}/>
                     </div>
                 </section>
             
