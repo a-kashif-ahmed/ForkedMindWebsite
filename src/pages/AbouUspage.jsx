@@ -108,7 +108,7 @@ export default function AboutUs({totalVisits}) {
                         <SocialCard title={'One Mission'} description={'Combining logic with creativity to build the future of chess.'} /> */}
                         <SocialCard title={'Full stack dev' }/>
                         
-                        <SocialCard title={'Designer' }/>
+                        <SocialCard title={'Design Lead' }/>
                     </div>
                 </section>
             
